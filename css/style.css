@@ -2,6 +2,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.bord_gray{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
 .bg_opacy{
     background-color: rgba(0, 0, 0, 0.3)
 }
@@ -53,4 +58,24 @@
 
 .header_right button{
     border: 1px solid white;
+}
+
+/* table */
+
+table img{
+    width: 30px;
+}
+
+table button{
+   padding: 2px;
+   background-color: white;
+   border: 1px solid gray;
+   color: gray;
+   border-radius: 5px;
+    
+}
+
+table button:hover{
+    background-color: gray;
+    color: white;
 }
