@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.bg_opacy{
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
 .navbar{
     height: 80px;
 }
@@ -33,8 +37,20 @@
     height: calc(100vh - 80px);
 }
 
+.side_bar a:hover{
+    opacity: 0.5;
+}
+
 /* right_navbar */
 
 .right_bar{
     width: calc(100% - 150px);
+}
+
+.header_top{
+    background-color: #1b72e8;
+}
+
+.header_right button{
+    border: 1px solid white;
 }
