@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.navbar_search{
+    min-width: 80%;
+}
+
+#col_yellow{
+    color: gold;
+}
+
+.logo_small{
+    max-width: 50px;
+}
+
+.navbar_icon a{
+    text-decoration: none;
+    color: black;
+}
+
+/* sidebar */
+
+.side_bar{
+    width: 150px;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    background-size: contain;
+    height: calc(100vh - 80px);
+}
+
+/* right_navbar */
+
+.right_bar{
+    width: calc(100% - 150px);
+}
