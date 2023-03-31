@@ -21,6 +21,22 @@
     min-width: 80%;
 }
 
+.input-group span{
+    border: none;  
+    background-color: #e5e5e5;  
+}
+
+.input-group span:hover{
+    border: none;  
+    background-color: gray;  
+    cursor: pointer;
+}
+
+.input-group input{
+    border: none; 
+    background-color: #e5e5e5;
+}
+
 #col_yellow{
     color: gold;
 }
@@ -86,4 +102,19 @@ table button{
 table button:hover{
     background-color: gray;
     color: white;
+}
+
+#offcanvasExample{
+    width: 1000px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .side_bar{
+        width: 70px;
+    }
+    .right_bar{
+        width: calc(100% - 70px);
+        overflow-y: auto;
+    }
 }

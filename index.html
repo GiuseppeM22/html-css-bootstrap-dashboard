@@ -15,6 +15,7 @@
     <title>Boodstrap dashboard</title>
 </head>
 <body>
+        <!-- navbar -->
    <nav>
         <div class="navbar">
             <div class="navbar_image">
@@ -22,9 +23,12 @@
                 <img class="d-none d-lg-block ms-2" src="./img/logo.svg" alt="logo">
             </div>
             <div class="navbar_search">
-                <input class="form-control me-2" type="search" placeholder="Prova a cercare" aria-label="Search">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="form-control me-2" type="search" placeholder="Prova a cercare" aria-label="Search">
+                </div>
             </div>
-            <div class="navbar_icon d-none d-lg-block">
+            <div class="navbar_icon d-none d-lg-flex">
                 <a href=""><i class="fa-solid fa-bars me-2"></i></a> 
                 <a href=""><i class="fa-solid fa-question me-2"></i></a>
                 <a href=""><i class="fa-solid fa-ellipsis-vertical me-2"></i></a>
@@ -34,46 +38,50 @@
    </nav>
 
    <div class="container-fluid heght_vh d-flex p-0 m-0">
+        <!-- barra laterale sinistra/sidebar -->
         <div class="side_bar d-flex flex-column justify-content-between align-items-center">
             <div class="sidebar_top d-flex flex-column mt-4">
-                <a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-house text-white me-3"></i>Home</a>
-                <a href="#" class="pt-2 text-decoration-none text-white"><i class="fa-solid fa-chart-line me-3"></i>Stats</a>
-                <a href="#" class="pt-2 text-decoration-none text-white"><i class="fa-solid fa-signal me-3"></i>Signal</a>
+                    <a href="#" class="text-decoration-none text-white d-flex mt-3"><i class="fa-solid fa-house text-white me-3 "></i><p class=" d-none d-lg-flex">Home</p></a>
+                    <a href="#" class=" text-decoration-none text-white d-flex mt-3"><i class="fa-solid fa-chart-line me-3 "></i><p class=" d-none d-lg-flex">Stats</p></a>
+                    <a href="#" class="text-decoration-none text-white d-flex mt-3"><i class="fa-solid fa-signal me-3 "></i><p class=" d-none d-lg-flex">Signal</p></a>
             </div>
-            <div class="sidebar_bottom mb-4">
-                <a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-gear me-3"></i>Admin</a>
+            <div class="sidebar_bottom mb-4"> mt-3
+                <a href="#" class="text-decoration-none text-white d-flex"><i class="fa-solid fa-gear me-3"></i><p class=" d-none d-lg-flex">Admin</p></a>
             </div>
         </div>
+        <!-- barra laterale destra/header -->
         <div class="right_bar">
             <header>
-                <div class="header_top py-4 px-2 d-flex justify-content-between">
+                <div class="header_top py-4 px-2 d-flex justify-content-between flex-column flex-md-row">
+                    <div class="header_right d-flex align-items-baseline order-0 order-md-2">
+                        <p class="text-white fw-bold me-3">Nuovo studente</p>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                    </div>         
                     <div class="header_left d-flex flex-column">
-                        <div class="header_left_top d-flex align-items-center">
+                        <div class="header_left_top d-flex align-items-center mt-3">
                             <h2 class="text-white me-1">Boolean</h2>
                             <span class="badge bg_opacy rounded-pill">Piano blaze</span>
                         </div>
-                        <div class="header_left_bottom d-flex align-items-baseline">
+                        <div class="header_left_bottom d-flex align-items-baseline order-1 order-md-0">
                             <span class="badge bg_opacy me-1 rounded-pill">3 app</span>
                             <i class="fa-solid fa-angles-right me-1" style="color: #ffffff;"></i>
-                            <span class="badge bg_opacy me-1 rounded-pill">Boolean mobile app</span>
-                            <span class="badge bg_opacy me-1 rounded-pill">Boolean web app</span>
-                            <span class="badge bg_opacy me-1 rounded-pill">Boolean blog app</span>
+                            <span class="badge d-none d-lg-flex bg_opacy me-1 rounded-pill">Boolean mobile app</span>
+                            <span class="badge d-none d-lg-flex bg_opacy me-1 rounded-pill">Boolean web app</span>
+                            <span class="badge d-none d-lg-flex bg_opacy me-1 rounded-pill">Boolean blog app</span>
+                            <span class="badge d-block d-lg-none bg_opacy me-1 rounded-pill">+</span>
                         </div>
                     </div>
-                    <div class="header_center d-flex flex-column">
+                    <div class="header_center d-flex flex-column mt-3 order-2 order-md-1">
                         <p class="text-white fw-bold">Studenti online negli ultimi 30 minuti</p>
                         <span class="text-white fs-4 fw-bold">125</span>
                     </div>              
-                    <div class="header_right d-flex align-items-baseline">
-                        <p class="text-white fw-bold me-3">Nuovo studente</p>
-                        <button type="button" class="btn btn-primary me-3"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
-                    </div>              
                 </div>
             </header>
-
+            <!-- inizio colonne -->
             <main>
+            <!-- colonne sinistra -->
                 <div class="row my-3 mx-3">
-                    <div class=" col-8 ">
+                    <div class="col-small-12 col-md-12 col-lg-8 ">
                       <div class="card bord_gray p-0">
                             <div class="bg_gray p-0 pt-2">
                                 <h3 class="ms-2 fw-bolder">Prossime classi</h3>
@@ -188,7 +196,8 @@
                               </div>
                         </div>
                     </div>
-                    <div class=" col-4 ">
+                    <!-- colonne destra -->
+                    <div class=" col-small-12 col-md-12 col-lg-4 ">
                         <div class="card bord_gray p-0">
                               <div class="bg_gray p-0 pt-2">
                                   <h3 class="ms-2 fw-bolder">Todo</h3>
@@ -223,9 +232,38 @@
                       </div>
                     </div>
                 </div>
-                
             </main>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Inserisci un nuovo Studente</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <div class="d-flex">
+                    <div class="d-flex flex-column">
+                        <p>Nome</p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p>Cognome</p>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+              </div>
+              <div class="dropdown mt-3">
+                
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+           </div>
         </div>
    </div>
 </body>
 </html>
+                
