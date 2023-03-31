@@ -74,6 +74,7 @@
 .right_bar{
     width: calc(100% - 150px);
     overflow-y: auto;
+    background-color: #f8f9fa;
 }
 
 .header_top{
@@ -105,23 +106,27 @@ table button:hover{
 }
 
 #offcanvasExample{
-    width: 1000px;
+    width: 800px;
 }
 
 .w-10perc{
-    width: calc(10% + 2rem);
+    width: 10%;
 }
 
 .w-20perc{
-    width: calc(20% + 2rem);
+    width: 20%;
 }
 
 .w-40perc{
     width: 40%;
 }
 
-.w-80perc{
-    width: calc(80% + 1rem);
+.w-50perc{
+    width: 50%;
+}
+
+.w-100perc{
+    width: 100%;
 }
 
 
