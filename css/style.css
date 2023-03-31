@@ -108,6 +108,23 @@ table button:hover{
     width: 1000px;
 }
 
+.w-10perc{
+    width: calc(10% + 2rem);
+}
+
+.w-20perc{
+    width: calc(20% + 2rem);
+}
+
+.w-40perc{
+    width: 40%;
+}
+
+.w-80perc{
+    width: calc(80% + 1rem);
+}
+
+
 
 @media screen and (max-width: 991px) {
     .side_bar{
