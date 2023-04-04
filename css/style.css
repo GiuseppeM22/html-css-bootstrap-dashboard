@@ -1,3 +1,6 @@
+
+/* general  */
+
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +14,20 @@
     background-color: rgba(0, 0, 0, 0.3)
 }
 
-.bg_gray{background-color: #f7f7f7;}
+.bg_gray    {background-color: #f7f7f7;}
+
+.w-10perc   {width: 10%;}
+
+.w-20perc   {width: 20%;}
+
+.w-40perc   {width: 40%;}
+
+.w-50perc   {width: 50%;}
+
+.w-100perc  {width: 100%;}
+
+
+/* navbar */
 
 .navbar{
     height: 80px;
@@ -105,31 +121,13 @@ table button:hover{
     color: white;
 }
 
+/* offcanvas */
+
 #offcanvasExample{
     width: 800px;
 }
 
-.w-10perc{
-    width: 10%;
-}
-
-.w-20perc{
-    width: 20%;
-}
-
-.w-40perc{
-    width: 40%;
-}
-
-.w-50perc{
-    width: 50%;
-}
-
-.w-100perc{
-    width: 100%;
-}
-
-
+/* sidebar media query */
 
 @media screen and (max-width: 991px) {
     .side_bar{
